@@ -3,6 +3,9 @@ require "medoo.php";
 $data = new medoo();
 $username = $_POST['username'];
 mysql_query("set names gb2312");   
+/*
+face_message 是存放留言信息的表
+*/
 $message = $data ->select("face_message",[
 	         "content",
              "person_send"

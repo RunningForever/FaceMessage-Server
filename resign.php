@@ -5,6 +5,9 @@ $password = $_POST['password'];
 $person_name = $_POST['person_name'];
 $data = new medoo();
 mysql_query("set names gb2312");   
+/*
+face_user 是存放用户信息的表
+*/
 $has = $data ->has("face_user",[    
  "username" =>$username
  ]);

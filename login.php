@@ -3,6 +3,9 @@ require "medoo.php";
 $username = $_POST['username'];
 $password = $_POST['password'];
 $data = new medoo();
+/*
+face_user 是存放用户数据的表
+*/
 $has = $data ->has("face_user",[    
  "username" =>$username
  ]);
